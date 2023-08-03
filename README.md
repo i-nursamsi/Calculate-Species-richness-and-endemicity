@@ -1,16 +1,7 @@
-This tool estimate three common biodiversity metrics: species richness, weighted endemism and corrected weighted endemism. The input file format of this tool is occurence points. This tool  calculates these metrics for tessellated hexagons created by the 5a. Create tessellated hexgons of regiontool (Basic tools: Shapefile and CSV tools). 
+This tool calculates three key biodiversity metrics - species richness, weighted endemism, and corrected weighted endemism - using input occurrence point data. Metrics are evaluated for tessellated hexagons, created using the 'Create Tessellated Hexagons' function in the basic Shapefile and CSV tools.
 
+Species richness (SR) is calculated as the total number of species (K) in a grid cell.
 
-Species Richness(SR) is sum of species per cell. 
+Weighted Endemism (WE) sums the reciprocals of the total number of cells each species in a grid cell appears in, emphasizing areas with a high proportion of range-restricted species.
 
-SR = K (the total number of species in a grid cell)
-
-
-Weighted Endemism (WE), which is the sum of the reciprocal of the total number of cells each species in a grid cell is found in. A WE emphasizes areas that have a high proportion of species with restricted ranges.
-
-WE = ∑ 1/C (C is the number of grid cells each endemic occurs in)
-
-
-Corrected Weighted Endemism(CWE). The corrected weighted endemism is simply the weighted endemism divided by the total number of species in a cell. A CWE emphasizes areas that have a high proportion of species with restricted ranges, but are not necessarily areas that are species rich. 
-
-CWE = WE/K (K is the total number of species in a grid cell)
+Corrected Weighted Endemism (CWE) is the weighted endemism divided by the total species count (K) in a cell, highlighting areas rich in range-restricted species, irrespective of the overall species count.
